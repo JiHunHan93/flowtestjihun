@@ -1,1 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jihunh.spring.section01.model.dao.MgDAO">
+
+	<resultMap type="com.jihunh.spring.section01.model.dto.MgDTO" id="mgDTO">
+		<id property="no" column="MEMBER_NO" />
+		<result property="name" column="MEMBER_NAME" />
+		<result property="id" column="MEMBER_ID" />
+		<result property="pwd" column="MEMBER_PWD" />
+		<result property="pno" column="MEMBER_PNO" />
+		<result property="gender" column="MEMBER_GENDER" />
+		<result property="email" column="EMAIL" />
+		<result property="address" column="ADDRESS" />
+		<result property="phone" column="PHONE" />
+		<result property="subPhone" column="SUB_PHONE" />
+		<result property="point" column="MEMBER_POINT" />
+		<result property="enrollDate" column="ENROLL_DATE" />
+		<result property="modifiedDate" column="MODIFIED_DATE" />
+		<result property="blackList" column="CHECK_BLACKLIST" />
+		<result property="status" column="MEMBER_STATUS" />
+	</resultMap>
+
+		<select id="selectMgList" resultMap="mgDTO">
+		SELECT
+		       A.MEMBER_NO
+		     , A.MEMBER_NAME
+		     , A.MEMBER_ID
+		     , A.MEMBER_PNO
+		     , A.MEMBER_GENDER
+		     , A.EMAIL
+		     , A.ADDRESS
+		     , A.PHONE
+		     , A.SUB_PHONE
+		     , A.MEMBER_POINT
+		     , A.ENROLL_DATE
+		     , A.MODIFIED_DATE
+		     , A.CHECK_BLACKLIST
+		     , A.MEMBER_STATUS
+	      FROM MG_MEMBER A
+	</select>
+	
+</mapper>

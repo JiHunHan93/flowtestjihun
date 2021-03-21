@@ -1,10 +1,30 @@
 package com.jihunh.spring.section01.run;
 
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.jihunh.spring.section01.model.dto.MgDTO;
+import com.jihunh.spring.section01.model.service.MgService;
+
 public class Application {
 
 	public static void main(String[] args) {
 		
-		System.out.println("연동하려 했는데 자야겠다");
+		ApplicationContext context = new GenericXmlApplicationContext("com/jihunh/spring/section01/config/spring.xml");
+		
+		MgService mgService = context.getBean(MgService.class);
+		
+		List<MgDTO> memberList = mgService.selectMgList();
+		for(MgDTO member : memberList) {
+			System.out.println(member);
+		}
+		
+		String[] names = context.getBeanDefinitionNames();
+		for(String name : names) {
+			System.out.println(name);
+		}
 		
 	}
 
