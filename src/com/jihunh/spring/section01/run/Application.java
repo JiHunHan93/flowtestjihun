@@ -23,8 +23,10 @@ public class Application {
 		
 		String[] names = context.getBeanDefinitionNames();
 		for(String name : names) {
-			System.out.println(name);
+			System.out.println("Bean : " + name);
 		}
+		
+		System.out.println("난 이제 지쳤어요 땡벌");
 		
 	}
 
