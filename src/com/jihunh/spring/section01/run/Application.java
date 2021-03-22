@@ -29,6 +29,8 @@ public class Application {
 		System.out.println("난 이제 지쳤어요 땡벌");
 		
 		System.out.println("완규형이 시키신 작업");
+
+		System.out.println("빠르게 확ㅇ린");
 		
 	}
 
