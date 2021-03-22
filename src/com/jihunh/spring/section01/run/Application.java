@@ -32,6 +32,8 @@ public class Application {
 
 		System.out.println("빠르게 확ㅇ린");
 		
+		System.out.println("이렇게 수정");
+		
 	}
 
 }
