@@ -10,8 +10,14 @@ public class EugeneYi {
 		String Hello4 = "세";
 		String Hello5 = "요";
 		String Hello6 = "!";
+		String Hello7 = "반";
+		String Hello8 = "갑";
+		String Hello9 = "습";
+		String Hello10 = "니";
+		String Hello11 = "다";
+		String Hello12 = "!";
 		
-		System.out.println(Hello1 + Hello2 + Hello3 + Hello4 + Hello5 + Hello6);
+		System.out.println(Hello1 + Hello2 + Hello3 + Hello4 + Hello5 + Hello6 + Hello7 + Hello8 + Hello9 + Hello10 + Hello11 + Hello12);
 
 	}
 
